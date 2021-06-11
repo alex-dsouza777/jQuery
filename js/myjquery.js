@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    console.log('I am in a new file now')
+
     // YOUR JQUERY CODE HERE
     console.log("Using JQUERY")
 // $('selectior').action() -- syntax
@@ -27,4 +29,13 @@ $('p').click(function(){
 // $('*').click(); //-- all elements
 //  $('p.odd').click(); //-- odd elements
 // $('p:first').click()  //-- First element 
-})
+
+
+
+// Events in jQuery
+    // 1. mouse events = click, dbclick, mouseenter, mouseleave
+    // 2. keyboard events = keypress, keydown, keyup
+    // 3. form events = submit, change, focus, blur
+    // 4. document/window events = load, resize, scroll, unload
+});
+
