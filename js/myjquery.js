@@ -13,6 +13,35 @@ $('p').click(function(){
     // $('.class').hide() // -- hide all
      });
 
+$('p').dblclick(function(){
+console.log('You double clicked on P', this);
+// $(this).hide() // -- hide selected item
+// $('p').hide() // -- hide all
+// $('#id').hide() // -- hide all
+// $('.class').hide() // -- hide all
+    });
+
+
+// $('p').mouseenter(function(){
+// console.log('You entered', this);
+// $(this).hide() // -- hide selected item
+// $('p').hide() // -- hide all
+// $('#id').hide() // -- hide all
+// $('.class').hide() // -- hide all
+    // });
+
+// $('p').hover(function(){
+// console.log('You Hovered', this);
+// $(this).hide() // -- hide selected item
+// $('p').hide() // -- hide all
+// $('#id').hide() // -- hide all
+// $('.class').hide() // -- hide all
+    // },
+    
+    // function(){
+    //     console.log('Thanks for visiting')
+    // });
+
      // There are three main types of selectrors
 // 1. element selectror
 // $('p').click(); // --example of element selector which click on all p
