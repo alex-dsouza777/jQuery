@@ -101,14 +101,33 @@ $('p').on({
 //     $('#wikki').fadeToggle(1000);
 // })
 
-$('#but').click(function(){
-    $('#wikki').fadeTo(1000);
-})
+// $('#but').click(function(){
+//     $('#wikki').fadeTo(1000);
+// })
 // *********************  SLIDE METHODS - CALLBACK METHOD IS OPTIONAL  *********************
+
 // $('#wikki').slideUp(1000)
 // $('#wikki').slideDown(1000)
-$('#wikki').slideToggle(1000, function(){
-    console.log('Done');
-}) 
-});
+// $('#wikki').slideToggle(1000, function(){
+//     console.log('Done');
+// }) 
 
+// *********************  ANIMATE FUNCTION   *********************
+
+// $('#wikki').animate({
+//     opacity:0.3,
+//     height: '150px',
+//     width: '350px'
+// }, 2000)
+
+// $('#wikki').animate({opacity:0.3}, 4000);
+// $('#wikki').animate({height:'300px'}, 1000);
+
+
+// *********************  ADDING CSS  *********************
+
+// $('#wikki').css('background-color', 'red')
+// }); 
+
+// *********************  AJAX IM JQUERY  *********************
+$.get('https://code.jquery.com/jquery-3.6.0.js', function(data, status){alert(data);})
