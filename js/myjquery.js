@@ -5,21 +5,21 @@ $(document).ready(function(){
     console.log("Using JQUERY")
 // $('selectior').action() -- syntax
 // $('p').click();
-$('p').click(function(){
-    console.log('You clicked on P', this);
+// $('p').click(function(){
+//     console.log('You clicked on P', this);
     // $(this).hide() // -- hide selected item
     // $('p').hide() // -- hide all
     // $('#id').hide() // -- hide all
     // $('.class').hide() // -- hide all
-     });
+    //  });
 
-$('p').dblclick(function(){
-console.log('You double clicked on P', this);
+// $('p').dblclick(function(){
+// console.log('You double clicked on P', this);
 // $(this).hide() // -- hide selected item
 // $('p').hide() // -- hide all
 // $('#id').hide() // -- hide all
 // $('.class').hide() // -- hide all
-    });
+    // });
 
 
 // $('p').mouseenter(function(){
@@ -66,5 +66,49 @@ console.log('You double clicked on P', this);
     // 2. keyboard events = keypress, keydown, keyup
     // 3. form events = submit, change, focus, blur
     // 4. document/window events = load, resize, scroll, unload
+
+
+// *********************  ON METHOD  *********************
+$('p').on({
+    click: function (){
+    console.log('Thank you', this);
+    },
+    mouseleave: function(){
+        console.log("Mouseleave");
+    }
+})
+// $('#wikki').hide(1000, function (){
+//     console.log('Hidden')
+// })
+
+// $('#wikki').show(1000, function (){
+//     console.log('Show')
+// })
+
+// $('#but').click(function(){
+//     $('#wikki').toggle(1000);
+// })
+
+// $('#but').click(function(){
+//     $('#wikki').fadeIn(1000);
+// })
+
+// $('#but').click(function(){
+//     $('#wikki').fadeOut(1000);
+// })
+
+// $('#but').click(function(){
+//     $('#wikki').fadeToggle(1000);
+// })
+
+$('#but').click(function(){
+    $('#wikki').fadeTo(1000);
+})
+// *********************  SLIDE METHODS - CALLBACK METHOD IS OPTIONAL  *********************
+// $('#wikki').slideUp(1000)
+// $('#wikki').slideDown(1000)
+$('#wikki').slideToggle(1000, function(){
+    console.log('Done');
+}) 
 });
 
